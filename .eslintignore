@@ -1,0 +1,25 @@
+# ESLint Ignore File
+
+# Dependencies
+node_modules/
+
+# Build directories
+dist/
+build/
+.cache/
+
+# Minified files
+*.min.js
+
+# Third-party libraries
+js/smooth-scrollbar.js
+
+# Configuration files
+*.config.js
+
+# Test files (if added in future)
+*.test.js
+*.spec.js
+
+# Coverage reports
+coverage/
