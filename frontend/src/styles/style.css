@@ -1,0 +1,69 @@
+/* Override for Next bundling to ensure absolute asset path */
+.hero-section {
+    background: linear-gradient(rgba(12, 12, 12, 0.55), rgba(12, 12, 12, 0.75)), url('/assets/images/hero-section-bg.jpg') center/cover no-repeat;
+}
+
+/* Project section background */
+#proje.project-section {
+    background: linear-gradient(rgba(12, 12, 12, 0.55), rgba(12, 12, 12, 0.75)), url('/assets/images/ProjeBG.jpg') center/cover no-repeat !important;
+}
+
+/* Project section layout tuning */
+#proje .container {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    min-height: clamp(480px, 60vh, 760px);
+    padding-top: clamp(0.5rem, 2vh, 2rem);
+    padding-bottom: clamp(1rem, 3vh, 3rem);
+}
+
+#proje .project-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#proje .project-panel {
+    margin-top: clamp(2rem, 5vw, 3.2rem);
+}
+
+#proje .project-text {
+    margin-top: 0;
+}
+
+#proje .project-pill {
+    box-shadow: 0 22px 36px rgba(10, 26, 14, 0.36);
+}
+
+#proje .project-text p {
+    font-size: clamp(1.74rem, 2.6vw, 2.26rem);
+}
+
+#proje .section-title,
+#proje .section-subtitle,
+#proje .project-text,
+#proje .project-text p {
+    color: #ffffff !important;
+    text-shadow: 0 6px 22px rgba(0, 0, 0, 0.4);
+}
+
+/* Desktop: lift project heading up by 4rem */
+@media (min-width: 1024px) {
+  #proje .section-header {
+    margin-top: -4rem;
+  }
+}
+
+/* Modern, themed transition section variants (non-destructive overrides) */
+#transition-konum-proje.transition-section {
+    padding-top: clamp(0.8rem, 2vw, 1.6rem);
+    padding-bottom: clamp(0.8rem, 2vw, 1.6rem);
+}
+
+/* Gallery section clean look (no shadow, tighter padding) */
+.gallery-section {
+    box-shadow: none !important;
+    background: var(--color-surface) !important;
+    padding: clamp(1.2rem, 3vw, 2.8rem) 0 !important;
+}
